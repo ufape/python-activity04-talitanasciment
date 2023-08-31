@@ -32,12 +32,12 @@ from library_problem_2 import divisao
 
 def main():
     
+    print("=-=-=-=-=-=-=-=-=-=")
     x = int(input("Digite o valor 1: "))
     y = int(input("Digite o valor 2: "))
     
     arr = divisao(x,y)
 
-    print("=-=-=-=-=-=-=-=-=-=")
     print("Os números são..: {}".format(" ".join(str(n) for n in arr)))
     print("=-=-=-=-=-=-=-=-=-=")
 if __name__ == '__main__':

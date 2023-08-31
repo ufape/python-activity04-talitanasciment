@@ -1,6 +1,6 @@
 def divisao(x,y):
     if x > y:
-            x, y = y, x
+        x, y = y, x
     
     numeros = []
     for i in range(x+1, y):
