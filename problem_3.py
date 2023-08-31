@@ -28,10 +28,21 @@ Os números são..: 12 13 17
 
 """
 
+from library_problem_3 import soma
 
 def main():
-    pass  # your code here
-
+    while True:
+        print("=-=-=-=-=-=-=-=-=-=")
+        x = int(input("Digite o valor inicial: "))
+        if x == 0:
+            break
+        soma = 0
+        if x % 2 == 1:
+            x += 1
+        for i in range(x, x+10, 2):
+            soma += i
+        print("=-=-=-=-=-=-=-=-=-=")
+        print(f"A soma dos 5 pares é..: {soma}")
 
 if __name__ == '__main__':
     main()
