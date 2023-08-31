@@ -10,5 +10,5 @@ def divisao(x,y):
     return numeros
 
 if __name__ == '__main__':
-    d = divisao(7, 10)
+    d = divisao(1, 10)
     print(d)

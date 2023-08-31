@@ -43,8 +43,10 @@ def main():
         if i % 5 == 2 or i % 5 == 3:
             numeros.append(i)
 
-    print("Os números são..: {}".format(" ".join(str(n) for n in numeros)))
+    arr = divisao(x,y)
 
-
+    print("=-=-=-=-=-=-=-=-=-=")
+    print("Os números são..: {}".format(" ".join(str(n) for n in arr)))
+    print("=-=-=-=-=-=-=-=-=-=")
 if __name__ == '__main__':
     main()
