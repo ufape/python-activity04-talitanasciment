@@ -55,11 +55,37 @@ Aluno aprovado.
 =-=-=-=-=-=-=-=-=-=
 
 """
-
+from library_problem_1 import media
 
 def main():
-    pass  # your code here
+    print("=-=-=-=-=-=-=-=-=-=")
+    n1 = float(input("Digite a nota 1: "))
+    n2 = float(input("Digite a nota 2: "))
+    n3 = float(input("Digite a nota 3: "))
+    n4 = float(input("Digite a nota 4: "))
 
+    m = media(n1, n2, n3, n4)
 
+    if m >= 7.0:
+        print(f"Media: {m:.1f}")
+        print("Aluno aprovado.")
+        print("=-=-=-=-=-=-=-=-=-=")
+    elif m < 5.0:
+        print(f"Media: {m:.1f}")
+        print("Aluno reprovado.")
+        print("=-=-=-=-=-=-=-=-=-=")
+    else:
+        print(f"Media: {m:.1f}")
+        print("Aluno em exame.")
+        exame = float(input("Digite a nota do exame: "))
+        nova_media = (m + exame) / 2
+        if nova_media >= 5.0:
+            print("Aluno aprovado.")
+        else:
+            print("Aluno reprovado.")
+        print(f"Media final: {nova_media:.1f}")
+        print("=-=-=-=-=-=-=-=-=-=")
+    
+    
 if __name__ == '__main__':
     main()
