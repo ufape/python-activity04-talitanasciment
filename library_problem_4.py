@@ -11,7 +11,7 @@ def testar_numeros_perfeitos():
         if e_perfeito(x):
             print(f"{x} é perfeito.")
         else:
-            print(f"{x} não é perfeito")
+            print(f"{x} não é perfeito.")
 
 if __name__ == '__main__':
     print()
