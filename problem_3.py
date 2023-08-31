@@ -31,8 +31,8 @@ Os números são..: 12 13 17
 from library_problem_3 import soma
 
 def main():
+    print("=-=-=-=-=-=-=-=-=-=")
     while True:
-        print("=-=-=-=-=-=-=-=-=-=")
         x = int(input("Digite o valor inicial: "))
         if x == 0:
             break
@@ -41,8 +41,8 @@ def main():
             x += 1
         for i in range(x, x+10, 2):
             soma += i
-        print("=-=-=-=-=-=-=-=-=-=")
         print(f"A soma dos 5 pares é..: {soma}")
+    print("=-=-=-=-=-=-=-=-=-=")
 
 if __name__ == '__main__':
     main()
